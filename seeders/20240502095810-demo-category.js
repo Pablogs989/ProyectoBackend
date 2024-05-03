@@ -5,8 +5,20 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert('Categories', [
       {
-        name_category: 'Literature',
-        description: 'Books, comics, art books, mangas',
+        name_category: 'Audiovisual',
+        description: 'Movies, videogames, songs...',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name_category: 'Vehicles',
+        description: 'Cars, bikes, trucks...',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name_category: 'Technology',
+        description: 'Phones, pc, consoles, smartwatches...',
         createdAt: new Date(),
         updatedAt: new Date()
       }

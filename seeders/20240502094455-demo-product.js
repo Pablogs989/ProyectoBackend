@@ -5,32 +5,38 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert('Products', [
       {
-        name: 'Book',
-        price: '20',
+        name: 'Star Wars',
+        price: 8,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Book',
-        price: '20',
+        name: 'MacBook Pro',
+        price: 1700,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Book',
-        price: '20',
+        name: 'BMW 230i',
+        price: 34000,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Book',
-        price: '20',
+        name: 'iPad Air',
+        price: 600,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Book',
-        price: '20',
+        name: 'Mercedes C63',
+        price: 45000,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Tesla Model S',
+        price: 110000,
         createdAt: new Date(),
         updatedAt: new Date()
       }
