@@ -14,7 +14,7 @@ const UserController = {
             console.error(error)
             next(error)
         }
-    
+
     },
     login(req, res) {
         User.findOne({

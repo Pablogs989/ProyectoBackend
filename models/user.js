@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      User.hasMany(models.Order)
+      User.hasMany(models.Order);
+      User.hasMany(models.Review);
     }
   }
   User.init({
@@ -43,9 +44,10 @@ module.exports = (sequelize, DataTypes) => {
           msg: "Please, write a password",
         },
       },
-      shippingAddress: DataTypes.STRING,
-      role: DataTypes.STRING
-    }
+
+    },
+    shippingAddress: DataTypes.STRING,
+    role: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',
