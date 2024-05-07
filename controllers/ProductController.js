@@ -1,10 +1,10 @@
-const { Product, Category, ProductCategory } = require('../models/index.js');
+const { Product, Category, ProductCategory, Review } = require('../models/index.js');
 
 const ProductController = {
     async getAll(req, res) {
         try {
             const products = await Product.findAll({
-                include: [{ model: Category, attributes: ["name_category"] }],
+                include: [{ model: Category, attributes: ["name_category"] }, { model: Review, attributes: ["UserId", "review"]}],
             });
             res.send({ msg: "All products", products });
         } catch (error) {
@@ -56,7 +56,7 @@ const ProductController = {
     async getById(req, res) {
         try {
             const products = await Product.findByPk(req.params.id, {
-                include: [{ model: Category, attributes: ["name_category"] }],
+                include: [{ model: Category, attributes: ["name_category"] }, { model: Review, attributes: ["UserId", "review"]}],
             });
             res.send({ msg: "Product " + req.params.id, products });
         } catch (error) {
