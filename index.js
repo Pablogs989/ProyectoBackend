@@ -8,6 +8,7 @@ app.use("/products", require("./routes/products"));
 app.use("/categories", require("./routes/categories"));
 app.use("/orders", require("./routes/orders"));
 app.use("/users", require("./routes/users"));
+app.use("/reviews", require("./routes/reviews"));
 
 app.use(typeError)
 
