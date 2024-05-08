@@ -1,61 +1,63 @@
-# Proyecto Backend
+# Backend Project
 
-## Descripción
-Este proyecto es un backend para una aplicación de comercio electrónico. Proporciona una API para gestionar usuarios, productos, categorías, pedidos y reseñas.
+## Description
+This project is a backend for an e-commerce application. It provides an API to manage users, products, categories, orders, and reviews.
 
-## Estructura SQL
+## SQL Structure
 ![SQL](./assets/SQL.png)
 
-
-## Tecnologías Utilizadas
+## Technologies Used
 - Express.js
 - Sequelize
 - MySQL2
 - Bcrypt.js
 - JSON Web Token (jsonwebtoken)
 
-## Endpoints Disponibles
+## Available Endpoints
 
-### Usuarios
-- `POST /users`: Crea un nuevo usuario.
-- `POST /users/login`: Inicia sesión de usuario.
-- `GET /users/info`: Obtiene la información del usuario actual.
+### Users
+- `POST /users`: Creates a new user.
+- `POST /users/login`: Logs in a user.
+- `GET /users/info`: Gets current user information.
 
-### Categorías
-- `GET /categories`: Obtiene todas las categorías.
-- `POST /categories`: Crea una nueva categoría.
-- `GET /categories/:id`: Obtiene una categoría por su ID.
-- `PUT /categories/:id`: Actualiza una categoría existente.
-- `DELETE /categories/:id`: Elimina una categoría.
+### Categories
+- `GET /categories`: Gets all categories.
+- `POST /categories`: Creates a new category.
+- `GET /categories/:id`: Gets a category by its ID.
+- `PUT /categories/:id`: Updates an existing category.
+- `DELETE /categories/:id`: Deletes a category.
 
-### Productos
-- `GET /products`: Obtiene todos los productos.
-- `POST /products`: Crea un nuevo producto.
-- `GET /products/:id`: Obtiene un producto por su ID.
-- `PUT /products/:id`: Actualiza un producto existente.
-- `DELETE /products/:id`: Elimina un producto.
+### Products
+- `GET /products`: Gets all products.
+- `POST /products`: Creates a new product.
+- `GET /products/:id`: Gets a product by its ID.
+- `PUT /products/:id`: Updates an existing product.
+- `DELETE /products/:id`: Deletes a product.
 
-### Pedidos
-- `GET /orders`: Obtiene todos los pedidos.
-- `POST /orders`: Crea un nuevo pedido.
+### Orders
+- `GET /orders`: Gets all orders.
+- `POST /orders`: Creates a new order.
 
-### Reseñas
-- `GET /reviews`: Obtiene todas las reseñas.
-- `POST /reviews`: Crea una nueva reseña.
+### Reviews
+- `GET /reviews`: Gets all reviews.
+- `POST /reviews`: Creates a new review.
+- `PUT /reviews/:id`: Updates an existing review.
+- `DELETE /reviews/:id`: Deletes a review.
 
-## Instalación
-1. Clona este repositorio.
-2. Instala las dependencias utilizando `npm install`.
-3. Configura las variables de entorno necesarias.
-4. Ejecuta el servidor con `npm start`.
+## Installation
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Set up necessary environment variables.
+4. Run the server with `npm start`.
 
-## Contribución
-Las contribuciones son bienvenidas. Si quieres contribuir al proyecto, sigue estos pasos:
-1. Haz un fork del repositorio.
-2. Crea una rama para tu nueva característica (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Agrega nueva característica'`).
-4. Sube tus cambios a tu repositorio fork (`git push origin feature/nueva-caracteristica`).
-5. Abre un pull request en GitHub.
+## Contribution
+Contributions are welcome. If you want to contribute to the project, follow these steps:
+1. Fork the repository.
+2. Create a branch for your new feature (`git checkout -b feature/new-feature`).
+3. Make your changes and commit (`git commit -am 'Add new feature'`).
+4. Push your changes to your forked repository (`git push origin feature/new-feature`).
+5. Open a pull request on GitHub.
 
-## Licencia
-Este proyecto está bajo la Licencia MIT.
+## License
+This project is under the MIT License.
+
