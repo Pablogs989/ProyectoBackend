@@ -14,7 +14,8 @@ const OrderController = {
     },
     async create(req, res) {
         try {
-            const user = await User.findByPk(req.body.userId);
+            console.log(req.user.id)
+            const user = await User.findByPk(req.user.id);
             if (!user) {
                 return res.status(404).send({ msg: "User not found" });
             }
